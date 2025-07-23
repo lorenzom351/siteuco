@@ -1,0 +1,32 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+
+
+    background-image: url('IMG/IMAGEM\ DE\ FUNDO\ TESTE.jpg'); 
+    
+    /* 'cover' é a melhor opção para responsividade.
+      A imagem irá cobrir toda a área do fundo, redimensionando-se
+      automaticamente para manter a proporção e preencher o espaço.
+    */
+    background-size: cover;
+    
+    /* Centraliza a imagem na tela. Você pode ajustar se precisar. */
+    background-position: center center; 
+    
+    /* Impede que a imagem de fundo se repita */
+    background-repeat: no-repeat;
+
+    /* A linha 'background-attachment: fixed;' foi removida para permitir 
+      que o fundo redimensione junto com a página.
+    */
+}
+
+/* Define a cor do anel de foco para os inputs.
+  Quando um campo do formulário é selecionado (focado), ele terá um contorno
+  vermelho, combinando com a cor da sua logo.
+  A classe 'focus-ring-color' é aplicada nos inputs dentro do HTML.
+*/
+.focus-ring-color:focus {
+    --tw-ring-color: #D62828; /* Tom de vermelho da logo */
+}
